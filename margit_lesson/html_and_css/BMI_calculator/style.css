@@ -1,0 +1,48 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(131, 60, 60),
+    rgb(168, 168, 64)
+  );
+}
+label {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: inline-block;
+  width: 100px;
+  margin: 15px 0;
+}
+p {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#answer {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input {
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+button {
+  background: none;
+  background-color: rgb(218, 188, 16);
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  border-radius: 2px;
+  box-shadow: rgb(49, 48, 42);
+  border-style: none;
+}
+.warning {
+  color: orange;
+}
+.normal {
+  color: green;
+}
+.danger {
+  color: red;
+}

@@ -1,0 +1,14 @@
+label {
+  display: inline-block;
+  width: 100px;
+  margin: 15px 0;
+}
+
+button {
+  border: none;
+  background-color: rgb(182, 152, 131);
+  padding: 10px;
+  border-radius: 2px;
+  margin-top: 20px;
+  box-shadow: rgb(56, 54, 54);
+}

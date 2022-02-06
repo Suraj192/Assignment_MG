@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(39, 39, 30);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: lavender;
+}
+
+h1 {
+  display: inline;
+  height: 100px;
+  width: 100px;
+}
+
+strong {
+  display: block;
+}
+
+div {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+span {
+  display: inline;
+  /* if it is the inline element use span istead of strong */
+}

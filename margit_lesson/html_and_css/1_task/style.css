@@ -1,0 +1,20 @@
+body {
+  background-color: blue;
+}
+
+#my_id {
+  color: burlywood;
+}
+
+.my_class {
+  color: crimson;
+}
+#my_class1 {
+  color: greenyellow; /* Trying to comment here , yes you can comment* # for id and . for class/
+}
+
+p {
+    font:family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px;
+}
+
+/* shift command 7 for to make the comment whitout selecting*/

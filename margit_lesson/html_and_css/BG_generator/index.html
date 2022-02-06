@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&family=Source+Serif+4:wght@700&display=swap"
+    />
+    <title>BG_generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Back Ground Generator</h1>
+    <form>
+      <input class="color1" name="color1" type="color" value="#ff0000" />
+      <input class="color2" name="color2" type="color" value="#fff700" />
+      <h2>Direction</h2>
+      <div>
+        <label for="bottom">To bottom</label>
+        <input type="radio" name="direction" id="bottom" value="to bottom" />
+      </div>
+      <div>
+        <label for="top">To top</label>
+        <input type="radio" name="direction" id="top" value="to top" />
+      </div>
+      <div>
+        <label for="left">To left</label>
+        <input type="radio" name="direction" id="left" value="to left" />
+      </div>
+      <div>
+        <label for="right">To right</label>
+        <input type="radio" name="direction" id="right" value="to right" />
+      </div>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>
