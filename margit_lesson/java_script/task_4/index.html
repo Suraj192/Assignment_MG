@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cars database</title>
+  </head>
+  <body>
+    <form id="inputData">
+      <div>
+        <label for="licence">License Number</label>
+        <input type="text" name="licence" id="licence" />
+      </div>
+      <div>
+        <label for="car-owner">Car owner</label>
+        <input type="text" name="car-owner" id="car-owner" />
+      </div>
+      <div>
+        <label for="car-model">Car model</label>
+        <input type="text" name="car-model" id="car-model" />
+      </div>
+      <div>
+        <label for="car-maker">Car maker</label>
+        <input type="text" name="car-maker" id="car-maker" />
+      </div>
+      <div>
+        <label for="price">Price</label>
+        <input type="text" name="price" id="price" />
+      </div>
+      <div>
+        <label for="color">Color</label>
+        <input type="text" name="color" id="color" />
+      </div>
+      <div>
+        <input type="submit" value="Add cars" />
+        <input type="reset" />
+      </div>
+    </form>
+    <table class="list" id="car">
+      <thead>
+        <tr>
+          <th>License Number</th>
+          <th>Car owner</th>
+          <th>Car model</th>
+          <th>Car maker</th>
+          <th>Price</th>
+          <th>Color</th>
+        </tr>
+      </thead>
+      <tbody id="new-row"></tbody>
+    </table>
+    <script src="index.js"></script>
+  </body>
+</html>
