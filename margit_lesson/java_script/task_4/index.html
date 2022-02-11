@@ -8,49 +8,68 @@
     <title>Cars database</title>
   </head>
   <body>
-    <form id="inputData">
-      <div>
-        <label for="licence">License Number</label>
-        <input type="text" name="licence" id="licence" />
+    <main id="search-form">
+      <h2>Search car by licence number</h2>
+      <div id="ln-search">
+        <form id="search">
+          <label for="search-ln">Licence number</label>
+          <input type="text" id="search-ln" />
+          <div id="submit-search">
+            <button onclick="event.preventDefault();searchLn()">Search</button>
+          </div>
+          <div>
+            <p></p>
+          </div>
+        </form>
       </div>
-      <div>
-        <label for="car-owner">Car owner</label>
-        <input type="text" name="car-owner" id="car-owner" />
-      </div>
-      <div>
-        <label for="car-model">Car model</label>
-        <input type="text" name="car-model" id="car-model" />
-      </div>
-      <div>
-        <label for="car-maker">Car maker</label>
-        <input type="text" name="car-maker" id="car-maker" />
-      </div>
-      <div>
-        <label for="price">Price</label>
-        <input type="text" name="price" id="price" />
-      </div>
-      <div>
-        <label for="color">Color</label>
-        <input type="text" name="color" id="color" />
-      </div>
-      <div>
-        <input type="submit" value="Add cars" />
-        <input type="reset" />
-      </div>
-    </form>
-    <table class="list" id="car">
-      <thead>
-        <tr>
-          <th>License Number</th>
-          <th>Car owner</th>
-          <th>Car model</th>
-          <th>Car maker</th>
-          <th>Price</th>
-          <th>Color</th>
-        </tr>
-      </thead>
-      <tbody id="new-row"></tbody>
-    </table>
+    </main>
+    <main id="form">
+      <form id="inputData">
+        <div>
+          <label for="licence">License Number</label>
+          <input type="text" name="licence" id="licence" />
+        </div>
+        <div>
+          <label for="car-owner">Car owner</label>
+          <input type="text" name="car-owner" id="car-owner" />
+        </div>
+        <div>
+          <label for="car-model">Car model</label>
+          <input type="text" name="car-model" id="car-model" />
+        </div>
+        <div>
+          <label for="car-maker">Car maker</label>
+          <input type="text" name="car-maker" id="car-maker" />
+        </div>
+        <div>
+          <label for="price">Price</label>
+          <input type="text" name="price" id="price" />
+        </div>
+        <div>
+          <label for="color">Color</label>
+          <input type="text" name="color" id="color" />
+        </div>
+        <div>
+          <input type="submit" value="Add cars" />
+          <input type="reset" />
+        </div>
+      </form>
+    </main>
+    <main id="table">
+      <table class="list" id="car">
+        <thead>
+          <tr>
+            <th>License Number</th>
+            <th>Car owner</th>
+            <th>Car model</th>
+            <th>Car maker</th>
+            <th>Price</th>
+            <th>Color</th>
+          </tr>
+        </thead>
+        <tbody id="table-data"></tbody>
+      </table>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>
