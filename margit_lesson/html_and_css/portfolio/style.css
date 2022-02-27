@@ -27,7 +27,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #134c63;
+  background-color: #566e92;
 }
 
 /*---------------Header---------------*/
@@ -85,11 +85,12 @@ section:nth-child(3) {
 .article-container {
   border: groove;
   border-radius: 5px 5px 0 0;
-  background-color: antiquewhite;
+  background-color: rgb(250, 252, 222);
   color: rgb(20, 19, 19);
 }
-.project-card {
-  box-shadow: 0 4px 20px 0 rgba(34, 68, 123, 0.2);
+.project-card:hover {
+  padding: 0 0.2rem 0.2rem 0;
+  background-color: rgb(202, 225, 243);
   cursor: pointer;
 }
 
@@ -97,7 +98,6 @@ section:nth-child(3) {
 .project-category {
   font-size: 0.875rem;
   letter-spacing: 0.1rem;
-  font-weight: 600;
   color: #4f6fa7;
   display: block;
   text-decoration: none;
@@ -116,6 +116,20 @@ section:nth-child(3) {
 .project-title {
   padding: 1rem 0;
   text-transform: uppercase;
+  font-size: 1.2rem;
+}
+#more1,
+#more2,
+#more3 {
+  display: none;
+}
+#myBtn1,
+#myBtn2,
+#myBtn3 {
+  border: none;
+  background-color: rgb(250, 252, 222);
+  color: #4f6fa7;
+  cursor: pointer;
 }
 /*----------Skill + About me----------*/
 #skillsImg,
@@ -164,4 +178,64 @@ input {
   border-radius: 5px;
   border: none;
   cursor: pointer;
+}
+#backToTop {
+  background-color: rgb(235, 207, 172);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-family: inherit;
+  cursor: pointer;
+  color: black;
+  display: none;
+}
+
+/*-----media screen------*/
+@media (max-width: 600px) {
+  .project-container {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+  #mobileButton {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: white;
+  }
+
+  nav ul {
+    display: none;
+  }
+  nav.responsive ul {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 85px;
+    width: 100%;
+    display: block;
+  }
+  nav.responsive ul li {
+    display: block;
+  }
+
+  nav.responsive a {
+    color: rgb(56, 39, 39);
+    display: block;
+  }
+}
+
+/*-------Additional class for the trasition effect from JS------*/
+
+.bg {
+  background-image: none;
+  background-color: whitesmoke;
+}
+
+.bg a,
+.bg span {
+  color: #333;
 }
