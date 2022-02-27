@@ -1,93 +1,59 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
-    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
   </head>
   <body>
-    <h1 id="main_header" class="sticky">
-      Suraj Sharma
-      <div class="my_links">
-        <button class="button">
-          <a href="#projects_id">Projects</a>
-        </button>
-        <button class="button">
-          <a href="#aboutMe_id">About Me</a>
-        </button>
-        <button class="button"><a href="#skills_id">Skills</a></button>
-        <button class="button">
-          <a href="https://github.com/Suraj192/" target="_blank"
-            >More about me</a
-          >
-        </button>
+    <header>
+      <div class="logo">
+        <h1><a href="#">Suraj Sharma </a></h1>
       </div>
-      <p id="heading_para">Welcome to my Portfolio</p>
-    </h1>
-    <div id="para1">
-      <h2 id="projects_id" class="myHeader">Projects</h2>
-      <img class="myImages" src="profile.jpeg" align="left" />
-      <p class="myText">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quam
-        quae saepe facilis voluptatem. Soluta impedit ratione minus quis
-        perspiciatis illum error, repellat similique ipsam nisi non, assumenda,
-        nam quisquam sit! Mollitia, distinctio. Eius ipsam, quis culpa facere
-        alias, error neque laudantium aperiam, doloribus maiores molestias
-        similique! Libero ut illo ea et. Assumenda minus ducimus minima
-        excepturi, rerum vero, facere cum architecto esse eius quidem debitis
-        dolorem molestiae vel quaerat blanditiis consectetur dolorum temporibus
-        provident non? Qui est fuga eum dolorum natus molestias praesentium
-        totam quia, ipsa neque cum facere ipsam repellat at vero blanditiis!
-        Nemo distinctio natus repellat aut.
-      </p>
-    </div>
-    <br />
-    <div id="para2">
-      <h2 id="aboutMe_id" class="myHeader">About Me</h2>
-      <img class="myImages" src="about_me.jpeg" alt="" align="right" />
-      <p class="myText">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis,
-        fugiat labore sed quod officia ullam quo optio corrupti provident ad,
-        ipsum eligendi necessitatibus reprehenderit explicabo vitae, quas aut
-        iste minus laboriosam soluta magni unde quis. Temporibus, cum ex sunt
-        facere consectetur fugit labore doloribus optio incidunt. Consequatur
-        minima blanditiis molestias vero eius nobis, laboriosam voluptatum autem
-        quisquam recusandae voluptatem nulla laudantium accusantium enim eos,
-        quis delectus ad obcaecati? Id laborum aperiam nihil repellendus
-        numquam, ad ipsam harum placeat aut repellat nobis, animi fugit nam
-        labore quod tempore dolores. Dignissimos id fugiat necessitatibus dolore
-        quibusdam sint, dicta earum excepturi porro eum.
-      </p>
-    </div>
-    <br />
-    <div id="para3">
-      <h2 id="skills_id" class="myHeader">Skills</h2>
-      <img class="myImages" src="skills_S.jpeg" alt="" align="left" />
-      <p class="myText">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias
-        quidem sunt, vero distinctio officiis sint rerum mollitia reprehenderit
-        vitae similique id esse at quia veniam asperiores nam aperiam unde,
-        alias commodi molestiae iste! Repellendus culpa nisi soluta hic
-        consectetur molestias inventore eaque, quasi facere nulla! Quia non
-        ipsum, sunt, porro dolorum, temporibus perferendis odio molestiae sed
-        possimus culpa quasi obcaecati! Deleniti cupiditate quo repudiandae
-        aperiam? Sequi laborum excepturi deleniti, esse alias provident veniam
-        aut voluptatibus quaerat qui! Modi ad, facilis debitis libero eius
-        suscipit quaerat. Asperiores illum veritatis quis voluptas, incidunt
-        exercitationem recusandae rerum doloremque totam sunt, vel, quibusdam
-        id! Architecto possimus quo commodi ex praesentium atque doloremque?
-        Repellendus ipsa error officia quam, adipisci officiis sit at voluptates
-        delectus a eligendi deserunt animi, odit nisi est atque sint vel
-        accusamus ipsam asperiores, rerum temporibus alias? Consequuntur alias
-        corrupti dolorem vero voluptates modi repellat! Non, fugiat optio
-        dignissimos inventore suscipit modi.
-      </p>
-    </div>
-    <footer>
-      <div id="contact_form">
-        <form action="">
-          <h3>Contact me</h3>
+      <nav class="responsive">
+        <button id="mobileButton">
+          <span class="material-icons">menu</span>
+        </button>
+        <ul>
+          <li><a href="#projects"> Projects </a></li>
+          <li><a href="#skills"> Skills </a></li>
+          <li><a href="#aboutMe"> About Me </a></li>
+          <li><a href="#contacts"> Contact </a></li>
+          <li>
+            <a href="https://github.com/Suraj192" target="blank"> My Github</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="intro">
+        <div><h2>Welcome to My Portfolio</h2></div>
+      </section>
+      <section id="projects">
+        <div><h3>Projects</h3></div>
+      </section>
+      <section id="skills">
+        <div><h3>Skills</h3></div>
+      </section>
+      <section id="aboutMe">
+        <div><h3>About Me</h3></div>
+      </section>
+    </main>
+    <footer id="contacts">
+      <div><h3>Contact</h3></div>
+      <div>
+        <form>
           <div>
             <label for="firstname">First name </label>
             <input type="text" class="firstname" id="firstname" />
@@ -100,9 +66,13 @@
             <label for="textbox">Message to Me</label>
             <textarea id="textbox" rows="5" cols="30"></textarea>
           </div>
-          <button type="submit" class="sendmessage">Send Message</button>
+          <div>
+            <button type="submit" id="sendmessage">Send Message</button>
+          </div>
         </form>
       </div>
+
+      <p>Copyrights &copy 2022</p>
     </footer>
   </body>
 </html>
