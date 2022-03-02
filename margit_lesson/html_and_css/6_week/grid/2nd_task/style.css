@@ -13,6 +13,7 @@ body {
     "header header header aside"
     "left main main aside"
     "something main main aside"
+    "something main main aside"
     "footer footer footer footer";
   grid-auto-rows: 1fr;
   gap: 1rem;
@@ -20,42 +21,37 @@ body {
 
 .header {
   grid-area: header;
-  background: green;
   min-height: 100px;
+  background: green;
   padding: 1rem;
 }
 
 .aside {
   grid-area: aside;
   background: yellow;
-  min-height: 100px;
   padding: 1rem;
 }
 
 .main {
   grid-area: main;
   background: pink;
-  min-height: 100px;
   padding: 1rem;
 }
 
 .footer {
   grid-area: footer;
   background: red;
-  min-height: 100px;
   padding: 1rem;
 }
 
 .leftt {
   grid-area: left;
   background: blue;
-  min-height: 100px;
   padding: 1rem;
 }
 
 .leftb {
   grid-area: something;
   background: purple;
-  min-height: 100px;
   padding: 1rem;
 }
