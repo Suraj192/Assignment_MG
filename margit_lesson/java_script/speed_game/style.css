@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    to right top,
+    rgba(108, 106, 148, 1) 0%,
+    rgba(159, 167, 44, 0.9934567577030813) 0%,
+    rgba(124, 131, 161, 1) 0%,
+    rgba(169, 161, 114, 1) 0%,
+    rgba(244, 243, 38, 1) 55%,
+    rgba(175, 237, 3, 1) 100%
+  );
+}
+
+h1 {
+  text-align: center;
+  margin: 4rem 0;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+
+#score {
+  text-align: center;
+  margin: 2rem;
+  font-size: 1.2rem;
+  font-family: inherit;
+}
+
+.circle {
+  display: inline-block;
+  height: 6rem;
+  width: 6rem;
+  background-color: lightgray;
+  margin: 1rem;
+  border-radius: 50%;
+  outline: auto;
+  border: none;
+  cursor: pointer;
+}
+
+#flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex-button {
+  display: flex;
+  margin: 4rem 0;
+  justify-content: center;
+}
+
+button {
+  margin: 1rem 2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: aliceblue;
+}
+.modal {
+  height: 100%;
+  background-color: black;
+  opacity: 0.2;
+}
