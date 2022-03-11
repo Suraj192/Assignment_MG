@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&family=Noto+Sans&family=Spartan:wght@100&display=swap");
+
+body {
+  background: url("pokebackground.jpeg") no-repeat fixed;
+  font-family: "Heebo", "Sans-serif";
+}
+
+h1 {
+  text-align: center;
+  padding: 2rem 0;
+  margin: 4rem;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-transform: capitalize;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.card {
+  background-color: aliceblue;
+  border-radius: 5px;
+  min-height: 200px;
+  display: grid;
+  box-shadow: inset 0 0 2px black;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.card img {
+  max-width: 100%;
+  height: 200px;
+  border-radius: 5px 5px 0 0;
+  filter: saturate(0.5);
+}
+
+.card:hover {
+  background-color: rgb(149, 201, 207);
+  box-shadow: 0 0 20px rgb(14, 4, 4);
+}
