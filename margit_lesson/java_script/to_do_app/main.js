@@ -3,14 +3,7 @@ const task = document.querySelector("#task");
 const note = document.querySelector("#note");
 const container = document.querySelector(".container");
 
-const consoleFunction = () => {
-  console.log(form);
-  console.log(task.value);
-};
-
-consoleFunction();
-
-form.addEventListener("submit", (event) => {
+const todoList = (event) => {
   event.preventDefault();
   const todo = task.value;
   const description = note.value;
@@ -18,22 +11,32 @@ form.addEventListener("submit", (event) => {
     alert("please fill out the task");
     return;
   }
-  container.insertAdjacentHTML(
-    "afterbegin",
-    `<div class="parent"><div class="card">
-      <div class="todo">
-        <h3>${todo}</h3>
-        <p>${description}</p>
-      </div>
-      <div>
-        <input type="checkbox" name="checkbox" id="checkbox" />
-      </div>
-    </div></div>`
-  );
-  // const deleteCards = document.querySelectorAll("#delete");
-  // deleteCards.forEach((deletecard) => {
-  //   deletecard.addEventListener("click", (event) => {
-  //     document.querySelector(".card").remove();
-  //   });
-  // });
-});
+  const cards = document.createElement("div");
+  cards.classList.add("card");
+  const todo_el = document.createElement("div");
+  todo_el.classList.add("todo");
+  const title = document.createElement("h3");
+  title.textContent = todo;
+  const para = document.createElement("p");
+  para.textContent = description;
+  const checkboxs = document.createElement("INPUT");
+  checkboxs.setAttribute("type", "checkbox");
+  checkboxs.setAttribute("id", "checkbox");
+
+  container.appendChild(cards);
+  cards.appendChild(todo_el);
+  todo_el.appendChild(title);
+  todo_el.appendChild(para);
+  todo_el.appendChild(checkboxs);
+
+  const button = document.createElement("BUTTON");
+  button.setAttribute("id", "del");
+  button.textContent = "X";
+  todo_el.appendChild(button);
+
+  button.addEventListener("click", () => {
+    container.removeChild(cards);
+  });
+};
+
+form.addEventListener("submit", todoList);
