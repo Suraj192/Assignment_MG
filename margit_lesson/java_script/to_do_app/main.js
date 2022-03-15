@@ -37,6 +37,8 @@ const todoList = (event) => {
   button.addEventListener("click", () => {
     container.removeChild(cards);
   });
+  task.value = "";
+  note.value = "";
 };
 
 form.addEventListener("submit", todoList);
