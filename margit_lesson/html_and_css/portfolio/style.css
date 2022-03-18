@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&display=swap");
 /*Page stylling*/
 * {
   margin: 0;
@@ -9,7 +10,7 @@ html {
 }
 
 body {
-  background-color: rgb(153, 165, 167);
+  background: black;
   font-family: "Noto sans", sans-serif;
   color: white;
 }
@@ -41,8 +42,17 @@ header {
   align-items: center;
 }
 
+#my-logo {
+  width: 40px;
+  border-radius: 50%;
+  padding-top: 1rem;
+}
+#name {
+  font-family: "Inspiration";
+}
+
 header a {
-  color: white;
+  color: rgb(24, 20, 20);
   text-decoration: none;
 }
 
@@ -62,14 +72,22 @@ section {
   scroll-margin-top: 5rem;
 }
 
+header {
+  border-radius: 10px 10px 0 0;
+  transition: 0.3s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 section:first-child,
 header {
-  background-image: url("porfolio_bg.jpg");
+  background: radial-gradient(rgb(252, 252, 3), rgb(255, 98, 0));
+  width: 100%;
 }
 section:first-child {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   font-size: 2.5rem;
+  border-radius: 0 0 10px 10px;
 }
 section:nth-child(3) {
   background-color: antiquewhite;
@@ -77,41 +95,44 @@ section:nth-child(3) {
 }
 /*----------Projects sections----------*/
 .project-container {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 80%;
+  margin-left: 10%;
 }
 .article-container {
-  border: groove;
-  border-radius: 5px 5px 0 0;
-  background-color: rgb(250, 252, 222);
-  color: rgb(20, 19, 19);
-}
-.project-card:hover {
-  padding: 0 0.2rem 0.2rem 0;
-  background-color: rgb(202, 225, 243);
-  cursor: pointer;
-}
-
-.project-content,
-.project-category {
-  font-size: 0.875rem;
-  letter-spacing: 0.1rem;
-  color: #4f6fa7;
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: inherit;
+  text-align: center;
+  border-radius: 10px;
+  background: linear-gradient(to top right, blue, lightblue);
+  font-size: 0.9rem;
+  letter-spacing: 0.15rem;
+  color: #f4e3f5;
   text-decoration: none;
 }
-
-.project-image {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+.article-container:hover {
+  padding: 0 0.2rem 0.2rem 0;
+  background: rgb(36, 101, 151);
 }
+
+.project-category {
+  text-decoration: none;
+  color: #f4e3f5;
+  border: solid;
+  border-radius: 5px;
+  margin-top: 1rem;
+  background: linear-gradient(lightblue, blue);
+}
+
 .project-image img {
-  width: 100%;
-  height: 20vh;
-  border-radius: 5px 5px 0 0;
+  width: 80%;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px black;
 }
 .project-title {
   padding: 1rem 0;
@@ -127,33 +148,60 @@ section:nth-child(3) {
 #myBtn2,
 #myBtn3 {
   border: none;
-  background-color: rgb(250, 252, 222);
-  color: #4f6fa7;
+  background: inherit;
+  color: #eaedf1;
   cursor: pointer;
+  box-shadow: 2px 2px 10px black;
+  border: groove;
 }
 /*----------Skill + About me----------*/
-#skillsImg,
 #aboutMeImg {
   height: 15rem;
-  width: 20rem;
+  width: 15rem;
   border-radius: 5px;
   margin: 0.5rem;
-}
-#skillsImg {
-  float: right;
 }
 #aboutMeImg {
   float: left;
 }
-#skills p {
-  text-align: justify;
+
+#hti,
+#csi,
+#jsi,
+#wwsdi {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100px;
+  height: 100px;
+}
+
+.skills-meter h3 {
+  border: groove;
+  text-align: center;
+}
+
+progress {
+  width: inherit;
+  padding: 1rem;
+}
+.skills-meter {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  min-height: 100px;
+}
+
+.skills-meter div {
+  text-align: center;
+  border: groove;
 }
 #aboutMe p {
   text-align: justify;
 }
 /*------------Footer------------*/
 #contacts {
-  background-color: black;
+  background: linear-gradient(to top, lightblue, blue);
   text-align: center;
   padding: 1.5rem;
 }
@@ -185,8 +233,8 @@ input {
   border: none;
   border-radius: 5px;
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 100px;
+  right: 100px;
   font-family: inherit;
   cursor: pointer;
   color: black;
@@ -194,7 +242,7 @@ input {
 }
 
 /*-----media screen------*/
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .project-container {
     max-width: 500px;
     display: flex;
@@ -226,16 +274,25 @@ input {
     color: rgb(56, 39, 39);
     display: block;
   }
+
+  #skills .skills-meter {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  section:first-child {
+    font-size: 2rem;
+  }
 }
 
 /*-------Additional class for the trasition effect from JS------*/
 
 .bg {
-  background-image: none;
-  background-color: whitesmoke;
+  background: linear-gradient(skyblue, blue);
+  border-radius: 0;
+  transition: 0.3s;
 }
 
 .bg a,
 .bg span {
-  color: #333;
+  color: rgb(230, 223, 223);
 }

@@ -19,7 +19,7 @@
   <body>
     <header>
       <div class="logo">
-        <h1><a href="#">Suraj Sharma </a></h1>
+        <h1><a href="#"><span><img src="My-logo.png" alt="myLogo" id="my-logo"></span><span id="name">uraj Sharma</span></a></h1>
       </div>
       <nav class="responsive">
         <button id="mobileButton">
@@ -33,6 +33,7 @@
           <li>
             <a href="https://github.com/Suraj192" target="blank"> My Github</a>
           </li>
+          <li><a href="#"> Gallery </a></li>
         </ul>
       </nav>
     </header>
@@ -44,12 +45,11 @@
         <div><h3>Projects</h3></div>
         <div class="project-container">
           <div class="article-container">
-            <article class="project-card">
               <figure class="project-image">
                 <img src="project_1.png" alt="Project One" />
               </figure>
               <div class="project-content">
-                <a href="#" class="project-category">Project One</a>
+                <a href="#" class="project-category">Click Here</a>
                 <h4 class="project-title">HTML & CSS Design</h4>
                 <p class="explanation">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
@@ -60,17 +60,13 @@
                   eius porro.</span> 
                   <button onclick="myFunction()" id="myBtn1">Read more</button>
                 </p>
-              </div>
-            </article>
-          </div>
-          <div class="project-container">
+              </div> </div>
             <div class="article-container">
-              <article class="project-card">
                 <figure class="project-image">
                   <img src="project_2.jpeg" alt="Project Two" />
                 </figure>
                 <div class="project-content">
-                  <a href="#" class="project-category">Project Two</a>
+                  <a href="#" class="project-category">Click Here</a>
                   <h4 class="project-title">Working with JAVA-SCRIPT</h4>
                   <p class="explanation">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
@@ -81,16 +77,13 @@
                     eius porro.</span> <button onclick="myFunction1()" id="myBtn2">Read more</button>
                   </p>
                 </div>
-              </article>
             </div>
-            <div class="project-container">
                 <div class="article-container">
-                  <article class="project-card">
                     <figure class="project-image">
                       <img src="project_3.png" alt="Project Three" />
                     </figure>
                     <div class="project-content">
-                      <a href="#" class="project-category">Project Three</a>
+                      <a href="#" class="project-category">Click Here</a>
                       <h4 class="project-title">UI And Prototyping</h4>
                       <p class="explanation">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
@@ -101,29 +94,33 @@
                         eius porro. </span> <button onclick="myFunction2()" id="myBtn3">Read more</button>
                       </p>
                     </div>
-                  </article>
                 </div>
-        </div>
+                </div>
       </section>
       <section id="skills">
-        <div><h3>Skills</h3></div>
-        <div><img id="skillsImg" src="tech_skills.webp" /></div>
-        <div>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores
-            temporibus tempore ex mollitia quasi, officia provident quos
-            consequatur repudiandae tempora sint odio, vitae placeat commodi
-            expedita soluta laudantium recusandae dolore, pariatur consequuntur.
-            Officiis maiores magni minus cum qui ullam similique quas odit?
-            Porro soluta cum in quaerat facilis atque blanditiis eius optio
-            adipisci autem! Dolore corrupti, dolores officia perferendis
-            aspernatur magnam cumque voluptates aliquid eius? Rerum repellendus
-            atque aliquam. Dolore, fugiat id! Sit, perspiciatis tempora. Aut
-            perspiciatis accusamus aliquid perferendis impedit animi deleniti
-            vero eligendi quos eveniet labore, similique, tempore officia
-            explicabo voluptate adipisci sapiente eos voluptatum quasi. Eaque,
-            molestiae.
-          </p>
+        <div><h3>Skills</h3></div>  
+        <div class="skills-meter">
+            <div id="hti">
+             <img src="htmlicon.png" alt="htmlicon">
+          <progress id="ht" value="80" max="100"> 80% </progress>
+          <h3>HTML</h3>
+            </div>
+            <div id="csi">
+              <img src="cssicon.png" alt="cssicon">
+          <progress id="cs" value="80" max="100"> 80% </progress>
+          <h3>CSS</h3>
+            </div>
+            <div id="jsi">
+              <img src="jsicon.png" alt="jsicon">
+          <progress id="js" value="80" max="100"> 80% </progress>
+          <h3>Java-Script</h3>
+            </div>
+            <div id="wwsdi">
+              <img src="softwareicon.png" alt="softwareicon">
+          <progress id="wwsd" value="80" max="100"> 80% </progress>
+          <h3>Software Development</h3>
+            </div>
+          </div>
         </div>
       </section>
       <section id="aboutMe">
