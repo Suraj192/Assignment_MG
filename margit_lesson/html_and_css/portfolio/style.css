@@ -172,12 +172,16 @@ section:nth-child(3) {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100px;
-  height: 100px;
+  width: 10rem;
+  height: 13rem;
+  margin: 0.2rem;
+  text-align: center;
 }
 
 .skills-meter h3 {
-  border: groove;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
   text-align: center;
 }
 
@@ -192,10 +196,6 @@ progress {
   min-height: 100px;
 }
 
-.skills-meter div {
-  text-align: center;
-  border: groove;
-}
 #aboutMe p {
   text-align: justify;
 }
@@ -244,7 +244,8 @@ input {
 /*-----media screen------*/
 @media (max-width: 700px) {
   .project-container {
-    max-width: 500px;
+    max-width: 80%;
+    margin-left: 10%;
     display: flex;
     flex-direction: column;
   }
@@ -275,12 +276,15 @@ input {
     display: block;
   }
 
-  #skills .skills-meter {
-    grid-template-columns: repeat(1, 1fr);
+  .skills-meter {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   section:first-child {
     font-size: 2rem;
+  }
+  section:nth-child(3) {
+    min-height: 70vh;
   }
 }
 
@@ -295,4 +299,89 @@ input {
 .bg a,
 .bg span {
   color: rgb(230, 223, 223);
+}
+
+/*-------------Gallery---------*/
+
+#gallery {
+  background-color: #134c63;
+  margin: 1rem 1rem;
+}
+
+.container-gallery {
+  display: grid;
+  grid-template-areas:
+    "pic1 pic1 pic2 pic2"
+    "pic1 pic1 pic2 pic2"
+    "pic1 pic1 pic3 pic3"
+    "pic1 pic1 pic3 pic3"
+    "pic4 pic5 pic5 pic5"
+    "pic6 pic5 pic5 pic5"
+    "pic7 pic5 pic5 pic5";
+  grid-auto-rows: 1fr;
+  gap: 0.3rem;
+}
+
+.pic {
+  width: 100%;
+  min-height: 7rem;
+  border: groove;
+}
+
+#pic1 {
+  grid-area: pic1;
+  background: url("images/istockphotos2.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+#pic2 {
+  grid-area: pic2;
+  background: url("images/istockphotos1.jpeg") no-repeat,
+    url("images/istockphotos1.jpeg") no-repeat;
+  background-size: contain, cover;
+  background-position: center;
+  filter: blur(0.5px);
+}
+#pic3 {
+  grid-area: pic3;
+  background: url("images/istockphotos3.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#pic4 {
+  grid-area: pic4;
+  background: url("images/istockphotos4.jpeg");
+  background-size: cover;
+}
+#pic5 {
+  grid-area: pic5;
+  background: url("images/istockphotos5.jpeg");
+  background-size: contain;
+  background-position: center;
+}
+#pic6 {
+  grid-area: pic6;
+  background: url("images/istockphotos6.jpeg") no-repeat;
+  background-size: 300px 200px;
+  background-position: center;
+}
+#pic7 {
+  grid-area: pic7;
+  background: url("images/istockphotos7.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.source,
+.source a {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: 200;
+  text-align: center;
+  text-decoration: none;
+  color: aquamarine;
+  width: 100%;
 }
