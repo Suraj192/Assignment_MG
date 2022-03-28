@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Slabo+27px&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: "Slabo 27px";
+}
+
+.logo h1 {
+  color: aliceblue;
+  width: 10rem;
+  height: 10rem;
+  background: radial-gradient(red, yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  border-radius: 50%;
+  box-shadow: inset 5px 5px 10px rgb(240, 240, 11);
+  margin: auto;
+  margin-top: 5rem;
+}

@@ -4,11 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Gallery</title>
   </head>
   <body id="gallery">
-    <div><h1 id="gallery">My Gallery</h1></div>
+    <header>
+      <div class="logo">
+        <h1>
+          <a href="#"
+            ><span
+              ><img src="images/My-logo.png" alt="myLogo" id="my-logo" /></span
+            ><span id="name">uraj Sharma</span></a
+          >
+        </h1>
+      </div>
+      <nav class="responsive">
+        <button id="mobileButton">
+          <span class="material-icons">menu</span>
+        </button>
+        <ul>
+          <li><a href="index.html#projects"> Projects </a></li>
+          <li><a href="index.html#skills"> Skills </a></li>
+          <li><a href="index.html#aboutMe"> About Me </a></li>
+          <li><a href="#contacts"> Contact </a></li>
+          <li>
+            <a href="https://github.com/Suraj192" target="blank"> My Github</a>
+          </li>
+          <li><a href="galary.html"> Gallery </a></li>
+        </ul>
+      </nav>
+    </header>
+    <div><h1 id="gallery-title">My Gallery</h1></div>
     <div class="container-gallery">
       <div class="pic" id="pic1"></div>
       <div class="pic" id="pic2"></div>
@@ -23,5 +53,28 @@
         >Images from Istock photos</a
       >
     </div>
+    <footer id="contacts">
+      <div><h3>Contact</h3></div>
+      <div>
+        <form>
+          <div>
+            <label for="firstname">First name </label>
+            <input type="text" class="firstname" id="firstname" />
+          </div>
+          <div>
+            <label for="email">Your Email </label>
+            <input type="email" class="email" id="email" />
+          </div>
+          <div>
+            <label for="textbox">Message to Me</label>
+            <textarea id="textbox" rows="5" cols="30"></textarea>
+          </div>
+          <div>
+            <button type="submit" id="sendmessage">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </footer>
+    <script src="main.js"></script>
   </body>
 </html>

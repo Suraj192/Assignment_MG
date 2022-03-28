@@ -337,11 +337,9 @@ input {
 
 #pic2 {
   grid-area: pic2;
-  background: url("images/istockphotos1.jpeg") no-repeat,
-    url("images/istockphotos1.jpeg") no-repeat;
-  background-size: contain, cover;
+  background: url("images/istockphotos1.jpeg") no-repeat;
+  background-size: contain;
   background-position: center;
-  filter: blur(0.5px);
 }
 #pic3 {
   grid-area: pic3;
